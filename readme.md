@@ -96,13 +96,21 @@ Strong cryptography = EVs trust signed roots from the OEM
 
 📚 References
 
-Bitcoin Whitepaper (Merkle Trees)
+📚 References & Further Reading
 
-RFC 6962: Certificate Transparency
+## 📚 References & Further Reading  
 
-IPFS Merkle DAGs
+- **[Bitcoin Whitepaper (Merkle Trees)](https://bitcoin.org/bitcoin.pdf)** – *Satoshi Nakamoto, 2008*  
+  Introduced Merkle trees for efficient verification in Bitcoin. Same principle applies to verifying firmware chunks in EV updates.  
 
-ed25519-dalek crate
+- **[RFC 6962: Certificate Transparency](https://datatracker.ietf.org/doc/html/rfc6962)** – *Laurie, Langley, and Kasper, IETF*  
+  Defines a log structure using Merkle trees to ensure tamper-evident transparency at scale.  
+
+- **[IPFS Merkle DAGs (Directed Acyclic Graphs)](https://ipfs.io)** – *Protocol Labs*  
+  IPFS organizes data into Merkle DAGs, enabling deduplication, integrity verification, and efficient distribution — useful for EV firmware.  
+
+- **[`ed25519-dalek` crate](https://crates.io/crates/ed25519-dalek)** – Rust implementation of Ed25519 signatures, ideal for signing Merkle roots and verifying authenticity on embedded devices.  
+
 
 🤝 Contributing
 
