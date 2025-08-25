@@ -20,7 +20,7 @@ Security Notes → root of trust, signing, replay protection
 
 🚀 Quick Start
 1. Clone the Repo
-git clone https://github.com/yourusername/ev-ota-merkle-poc.git
+git clone
 cd ev-ota-merkle-poc
 
 2. Run the Rust PoC
